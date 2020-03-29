@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class Inventory {
 	
+	
 	//creates new inventory file
 	boolean createInventory(String name){
 		//stub

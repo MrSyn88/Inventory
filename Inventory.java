@@ -50,7 +50,7 @@ public class Inventory {
             if (leave.equalsIgnoreCase("yes")) {
                 correct = true;
                 goAgain = "no";
-                scan.close();
+                // scan.close();
                 System.out.print("\n");
                 return goAgain;
             } else if (leave.equalsIgnoreCase("no")) {
@@ -60,7 +60,7 @@ public class Inventory {
                 System.out.println("ERROR: Invalid Response (yes/no)\n");
             }
         } while (correct = false);
-        scan.close();
+        // scan.close();
         return goAgain;
     }
 
@@ -72,14 +72,14 @@ public class Inventory {
             if (response.equalsIgnoreCase("yes") || response.equalsIgnoreCase("no")) {
                 correct = true;
                 goAgain = response;
-                scan.close();
+                // scan.close();
                 System.out.print("\n");
                 return goAgain;
             } else {
                 System.out.println("ERROR: Invalid response (yes/no)");
             }
         } while (correct = false);
-        scan.close();
+        // scan.close();
         return goAgain;
     }
 

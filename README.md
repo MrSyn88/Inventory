@@ -16,7 +16,7 @@ Nicolas Ruiz
 ***  
 Benjamin Parrish  
 -
-&nbsp;&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;cbe982@my.utsa.edu    
 &nbsp;&nbsp;&nbsp;&nbsp;Discord: gitargy#2315  
 
 ***  

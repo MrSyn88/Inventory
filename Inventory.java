@@ -5,22 +5,25 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import application.ItemEntry;
 
 public class Inventory {
 	
-	ItemEntry[] itemList;
+	ArrayList<ItemEntry> itemList;
 	File dataFile;
 	//constructor
 	public Inventory(String iName) throws FileNotFoundException{
 		this.dataFile = new File(iName+".txt");  
 		BufferedReader br = new BufferedReader(new FileReader(this.dataFile));
 		String rawText;
+		String[] tokens;
 		try {
 			while((rawText = br.readLine())!= null){
-				
+				tokens = rawText.split(",");
+				this.itemList.add(new ItemEntry(tokens[0], Integer.parseInt(tokens[1])));
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -8,69 +8,64 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import application.ItemEntry;
-
 public class Inventory {
-	
-	ArrayList<ItemEntry> itemList;
-	File dataFile;
-	//constructor
-	public Inventory(String iName) throws FileNotFoundException{
-		this.dataFile = new File(iName+".txt");  
-		BufferedReader br = new BufferedReader(new FileReader(this.dataFile));
-		String rawText;
-		String[] tokens;
-		try {
-			while((rawText = br.readLine())!= null){
-				tokens = rawText.split(",");
-				this.itemList.add(new ItemEntry(tokens[0], Integer.parseInt(tokens[1])));
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	//creates new inventory file
-	public static boolean createInventory(String name){
-		String fileAddress = new String(name + ".txt");
-		try{
-			File newFile = new File(fileAddress);
-			  if (newFile.createNewFile()) {
-				  System.out.println("New Inventory File: " + newFile.getName());
-					return true;
-			  } else {
-				  System.out.println("File already exists.");	
-			  }
-		} catch (IOException e) {
-		      e.printStackTrace();
-		} 
-		return false;
-	}
-	
-	//opens inventory file and reads contents to memory
-	
-	
-	//adds new item to inventory file 
-	void newInventoryItem(){}
-	
-	
-	//updates values of existing inventory item
-	
-	
-	//prints contents of existing inventory item
-	
-	
-	//deletes inventory item
-	
-	
-	//deletes inventory file
-	
-	
+
+    // ArrayList<ItemEntry> itemList;
+    // File dataFile;
+
+    // // constructor
+    // public Inventory(String iName) throws FileNotFoundException {
+    // this.dataFile = new File(iName + ".txt");
+    // BufferedReader br = new BufferedReader(new FileReader(this.dataFile));
+    // String rawText;
+    // String[] tokens;
+    // try {
+    // while ((rawText = br.readLine()) != null) {
+    // tokens = rawText.split(",");
+    // this.itemList.add(new ItemEntry(tokens[0], Integer.parseInt(tokens[1])));
+    // }
+    // } catch (IOException e) {
+    // // TODO Auto-generated catch block
+    // e.printStackTrace();
+    // }
+    // }
+
+    // // creates new inventory file
+    // public static boolean createInventory(String name) {
+    // String fileAddress = new String(name + ".txt");
+    // try {
+    // File newFile = new File(fileAddress);
+    // if (newFile.createNewFile()) {
+    // System.out.println("New Inventory File: " + newFile.getName());
+    // return true;
+    // } else {
+    // System.out.println("File already exists.");
+    // }
+    // } catch (IOException e) {
+    // e.printStackTrace();
+    // }
+    // return false;
+    // }
+
+    // // opens inventory file and reads contents to memory
+
+    // // adds new item to inventory file
+    // void newInventoryItem() {
+    // }
+
+    // // updates values of existing inventory item
+
+    // // prints contents of existing inventory item
+
+    // // deletes inventory item
+
+    // // deletes inventory file
+
     public static void main(String args[]) {
         String choice;
         String goAgain = "Yes";
         Boolean correct = false;
+        String filenm;
         Scanner scan = new Scanner(System.in);
         do {
             System.out.println("Howdy Rowdy Inventory System");
@@ -81,11 +76,20 @@ public class Inventory {
             choice = scan.nextLine();
             switch (choice) {
                 case "1":
-                    System.out.println("\nYou chose 1\n");
+                    System.out.println("\nWhat would you like to name the inventory?:");
+                    filenm = scan.nextLine();
+                    System.out.println("Creating " + filenm + ".txt");
+                    // Inventory.createInventory(filenm);
                     goAgain = repeat(goAgain, correct);
                     break;
                 case "2":
-                    System.out.println("\nYou chose 2\n");
+                    System.out.println("\nWhich Inventory would you like to open?\n");
+                    filenm = scan.nextLine();
+                    System.out.println("Opening " + filenm + ".txt");
+                    // Inventory gonnaOpen = new Inventory(filenm);
+                    // for (int i = 0; i < gonnaOpen.dataFile.length(); i++) {
+                    // System.out.println(gonnaOpen.itemList[i].name);
+                    // }
                     goAgain = repeat(goAgain, correct);
                     break;
                 case "3":

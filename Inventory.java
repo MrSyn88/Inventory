@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Inventory {
+/*
 	
 	ArrayList<ItemEntry> itemList;
 	File dataFile;
@@ -77,10 +78,12 @@ public class Inventory {
 	//deletes inventory file
 	
 	
+*/
     public static void main(String args[]) {
         String choice;
         String goAgain = "Yes";
         Boolean correct = false;
+        String filenm;
         Scanner scan = new Scanner(System.in);
         do {
             System.out.println("Howdy Rowdy Inventory System");
@@ -91,11 +94,20 @@ public class Inventory {
             choice = scan.nextLine();
             switch (choice) {
                 case "1":
-                    System.out.println("\nYou chose 1\n");
+                    System.out.println("\nWhat would you like to name the inventory?:");
+                    filenm = scan.nextLine();
+                    System.out.println("Creating " + filenm + ".txt");
+                    // Inventory.createInventory(filenm);
                     goAgain = repeat(goAgain, correct);
                     break;
                 case "2":
-                    System.out.println("\nYou chose 2\n");
+                    System.out.println("\nWhich Inventory would you like to open?\n");
+                    filenm = scan.nextLine();
+                    System.out.println("Opening " + filenm + ".txt");
+                    // Inventory gonnaOpen = new Inventory(filenm);
+                    // for (int i = 0; i < gonnaOpen.dataFile.length(); i++) {
+                    // System.out.println(gonnaOpen.itemList[i].name);
+                    // }
                     goAgain = repeat(goAgain, correct);
                     break;
                 case "3":

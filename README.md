@@ -7,7 +7,7 @@ Rowdyhacks project
 
 ## Description  
 
-Basic inventory system in Java
+Our goal is to make a basic inventory system in Java that can create and manage multiple inventories  
 ***  
 
 ### Contributors  

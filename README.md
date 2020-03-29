@@ -1,24 +1,33 @@
 # Inventory  
 
+**Howdy Rowdy Inventory System**  
 Rowdyhacks project
 
-***  
 
 ## Description  
+Our goal is to make a basic inventory system in Java that can create and manage multiple inventories    
 
-Basic inventory system in Java
-***  
-
-### Contributors  
-
+## Contributors  
 Nicolas Ruiz  
-  -Discord: MrSyn#9611  
-  
+-
+&nbsp;&nbsp;&nbsp;&nbsp;syngenruiz2@gmail.com  
+&nbsp;&nbsp;&nbsp;&nbsp;Discord: MrSyn#9611    
+
+***  
 Benjamin Parrish  
-  -Discord: gitargy#2315  
-  
+-
+&nbsp;&nbsp;&nbsp;&nbsp;cbe982@my.utsa.edu    
+&nbsp;&nbsp;&nbsp;&nbsp;Discord: gitargy#2315  
+
+***  
 Robert Quintanilla  
-  -Discord: rob2radical4u#6877  
+-  
+&nbsp;&nbsp;&nbsp;&nbsp;qrobert@rocketmail.com  
+&nbsp;&nbsp;&nbsp;&nbsp;Discord: rob2radical4u#6877  
   
+***  
 Eloy Rodriguez  
-  -Discord: SPIDER#6683  
+-  
+&nbsp;&nbsp;&nbsp;&nbsp;dragonz4twenty@gmail.com  
+&nbsp;&nbsp;&nbsp;&nbsp;Discord: SPIDER#6683  
+***

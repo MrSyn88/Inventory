@@ -7,4 +7,14 @@ public class ItemEntry {
 		this.name = n;
 		return;
 	}
+	
+	public String getName(){
+		return this.name;
+	}
+	public int getQuantity(){
+		return this.quantity;
+	}
+	public void setQuantity(int newQ){
+		this.quantity = newQ;
+	}
 }

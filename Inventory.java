@@ -1,4 +1,4 @@
-//A terrminal based version of the project
+//A terminal based version of the project
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,8 +7,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import application.ItemEntry;
 
 public class Inventory {
 	
@@ -52,11 +50,23 @@ public class Inventory {
 	
 	
 	//adds new item to inventory file 
-	void newInventoryItem(){}
+	void newInventoryItem(String name, int quantity){
+		itemList.add(new ItemEntry(name, quantity));
+	}
 	
 	
 	//updates values of existing inventory item
-	
+	public void upDateItemQ(String itName, int newQuantity){
+		int found = 0;
+		for(int i = 0; i < itemList.size(); i++){
+			if(itemList.get(i).getName() == itName){
+				itemList.get(i).setQuantity(newQuantity);
+				found = 1;
+				break;
+			}
+		}
+		if(found!=1){System.out.println("Error: item not found");}
+	}
 	
 	//prints contents of existing inventory item
 	
